@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile */
+#box1
+{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+#box2
+{
+    width: 200px;
+    height: 200px;
+    background-color:blue;
+}
+
+#box3
+{
+    width: 200px;
+    height: 200px;
+    background-color:yellow;
+}
+
+/* container main div */
+#container 
+{
+  
+    display: flex; /* flex property on parent div */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:50%
+
+}
+
+
+
+
+
+/* Tablet */
+@media(min-width: 450px) {
+    
+
+#box1
+{
+    width: 350px;
+    height: 750px;
+}
+
+#box2
+{
+    width: 300px;
+    height: 325px;
+}
+
+#box3
+{
+    width: 300px;
+    height: 325px;
+}
+
+
+
+#container 
+{
+
+    flex-wrap: wrap; /* make items flexible */
+    flex-direction: column;
+    width: 700px;
+    height: 700px;
+    gap: 45px;
+}
+
+}
+
+
+/* Desktop */
+@media (min-width: 992px)
+{
+    
+    #box1
+{
+    width: 350px;
+    height: 325px;
+}
+
+#box2
+{
+    width: 350px;
+    height: 325px;
+}
+
+#box3
+{
+    width: 350px;
+    height: 325px;
+}
+
+
+#container 
+{
+    flex-direction: row;
+    gap: 25px;
+    height: 750px;
+    width: 2000px;
+}
+
+}
+
